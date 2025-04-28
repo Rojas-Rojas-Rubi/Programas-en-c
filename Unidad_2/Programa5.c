@@ -52,6 +52,16 @@ void multiplicarMatrices(int n, Fraccion A[n][n], Fraccion B[n][n], Fraccion R[n
     }
 }
 
+int sumarmatriz(int filas, int columnas, int m[filas][columnas]){
+    int suma = 0;
+    for (int i = 0; i < filas; i++){
+        for (int j = 0; j < columnas; j++){
+            suma += m[i][j];
+        }
+    }
+    return suma;
+}
+
 int main() {
     int n;
 
